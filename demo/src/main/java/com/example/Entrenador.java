@@ -2,17 +2,20 @@ package com.example;
 
 public class Entrenador {
 	private String nombre; 
-    private int experiencia; 
+    private String experiencia; 
     private String deporteEspecializacion; 
     private Equipo equipo;
 	public Equipo _entrenador;
 
-	public Entrenador(String nombre, int experiencia, String deporteEspecializacion) {
+	public Entrenador(String nombre, String experiencia, String deporteEspecializacion, Equipo equipo) {
         this.nombre = nombre;
         this.experiencia = experiencia;
         this.deporteEspecializacion = deporteEspecializacion;
+		this.equipo = equipo;
     }
-	public void asignarEquipo(Equipo equipo) {
+
+    
+    public void asignarEquipo(Equipo equipo) {
         this.equipo = equipo;
     }
 
@@ -20,7 +23,7 @@ public class Entrenador {
         return nombre;
     }
 
-    public int getExperiencia() {
+    public String getExperiencia() {
         return experiencia;
     }
 
@@ -40,3 +43,4 @@ public class Entrenador {
                "Equipo: " + (equipo != null ? equipo.getNombre() : "No asignado");
     }
 }
+

@@ -57,7 +57,7 @@ public class Equipo {
                                                 "Entrenador: " + (entrenador != null ? entrenador.getNombre() : "No asignado") + "\n" +
                                                 "Deportistas:\n");
         for (Deportista d : deportistas) {
-            info.append("- ").append(d.getNombreCompleto()).append("\n");
+            info.append("- ").append(d.getNombre()).append("\n");
         }
         return info.toString();
     }

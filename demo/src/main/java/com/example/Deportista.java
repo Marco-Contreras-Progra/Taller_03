@@ -15,13 +15,18 @@ public class Deportista {
 		this.equipo = equipo;
 	}
 
-	public String getNombreCompleto() {
-        return nombre + " " + apellido;
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
     }
 
     public String getContacto() {
         return contacto;
     }
+
     public String getDeporteQuePractica() {
         return deporteQuePractica;
     }
@@ -29,14 +34,7 @@ public class Deportista {
     public Equipo getEquipo() {
         return equipo;
     }
-
-	public String mostrarInformacion() {
-        return "Nombre: " + getNombreCompleto() + "\n" +
-               "Contacto: " + contacto + "\n" +
-               "Deporte: " + deporteQuePractica + "\n" +
-               "Equipo: " + (equipo != null ? equipo.getNombre() : "No asignado");
-    }
-
-
-
 }
+
+
+
